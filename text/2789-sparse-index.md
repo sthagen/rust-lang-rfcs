@@ -1,7 +1,7 @@
 - Feature Name: sparse_index
 - Start Date: 2019-10-18
 - RFC PR: [rust-lang/rfcs#2789](https://github.com/rust-lang/rfcs/pull/2789)
-- Tracking Issue: [rust-lang/rust#9069](https://github.com/rust-lang/cargo/issues/9069)
+- Tracking Issue: [rust-lang/cargo#9069](https://github.com/rust-lang/cargo/issues/9069)
 
 # Summary
 [summary]: #summary
@@ -80,7 +80,7 @@ The rsync protocol requires scanning and checksumming of source and destination 
 # Prior art
 [prior-art]: #prior-art
 
-https://andre.arko.net/2014/03/28/the-new-rubygems-index-format/
+<https://andre.arko.net/2014/03/28/the-new-rubygems-index-format/>
 
 Bundler used to have a full index fetched ahead of time, similar to Cargo's, until it grew too large. Then it used a centralized query API, until that became too problematic to support. Then it switched to an incrementally downloaded flat file index format similar to the solution proposed here.
 
