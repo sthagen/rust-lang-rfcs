@@ -34,7 +34,7 @@ Safety critical Rust software won't pass certification without a specification t
 Proposals and discussions about new Rust language features could be more efficient and precise
 using accurately defined terms that everyone agrees on.
 Questions about subtle interactions between features of the language could be answered
-using precise information from a specification, instead a combination of guesses and several non-authoritative sources.
+using precise information from a specification, instead of a combination of guesses and several non-authoritative sources.
 
 # Current state
 
@@ -55,7 +55,7 @@ the [Unsafe Code Guidelines Project](https://github.com/rust-lang/unsafe-code-gu
 [Miri](https://github.com/rust-lang/miri/),
 the collection of [accepted RFCs](https://rust-lang.github.io/rfcs/),
 the [Ferrocene Language Specification](https://spec.ferrocene.dev/),
-lots context and decisions spread over [tons of GitHub issues](https://github.com/rust-lang/rust/issues/),
+lots of context and decisions spread over [tons of GitHub issues](https://github.com/rust-lang/rust/issues/),
 [MiniRust](https://github.com/RalfJung/minirust),
 the [source code](https://github.com/rust-lang/rust/),
 and more.
