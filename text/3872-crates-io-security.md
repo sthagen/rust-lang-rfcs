@@ -1,7 +1,7 @@
 - Feature Name: crates-io-security
 - Start Date: 2025-10-27
 - RFC PR: [rust-lang/rfcs#3872](https://github.com/rust-lang/rfcs/pull/3872)
-- Rust Issue: [rust-lang/rust#3872](https://github.com/rust-lang/rust/issues/3872)
+- Rust Issue: [rust-lang/crates.io#12507](https://github.com/rust-lang/crates.io/issues/12507)
 
 ## Summary
 
