@@ -11,7 +11,7 @@ The Leadership Council has a Project Priorities budget, which is used to fund va
 
 The Maintainer in Residence program is dedicated to hiring long-term maintainers and funding their maintenance work in full. Maintainers' in Residence time is split between priorities guided by the teams they are supporting and priorities of their own choosing within the project.
 
-Selecting Maintainers in Residence is a collaboration between the Foundation and a "Funding team" appointed by the Leadership Council. This Funding team will weigh the set of applications against the project's needs and priorities.
+Selecting Maintainers in Residence is a collaboration between the Foundation and a "Funding team" whose members are appointed by the Leadership Council or directly by the top-level teams. This Funding team will weigh the set of applications against the project's needs and priorities.
 
 The Funding team is additionally charged with ensuring the program's overall success. When sponsors contribute undirected funding, they are investing in the Rust project as a whole — and the project should meet them in good faith. Project teams receiving support from the program are expected to help the Funding team manage sponsor relations, e.g., by meeting with sponsors or providing other reasonable sponsor benefits.
 
