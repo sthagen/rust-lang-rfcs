@@ -74,7 +74,7 @@ library, so that the new surface area of the standard library exposed by
 build-std is minimal (while providing extension points for this to be changed in
 future in limited and controlled ways).
 
-[rfcs#3875-features]: https://github.com/davidtwco/rfcs/blob/build-std-part-three-explicit-dependencies/text/3875-build-std-explicit-dependencies.md#features
+[rfcs#3875-features]: https://rust-lang.github.io/rfcs/3875-build-std-explicit-dependencies.html#features
 
 ## Proposal
 [proposal]: #proposal
@@ -339,7 +339,7 @@ possibility for how the `no_std` mechanism could be replaced.
 
 - [*Replace `#![no_std]` as the source-of-truth for whether a crate depends on `std`*][future-replace-no_std] (RFC 3875)
 
-[future-replace-no_std]: https://github.com/davidtwco/rfcs/blob/build-std-part-three-explicit-dependencies/text/3875-build-std-explicit-dependencies.md#replace-no_std-as-the-source-of-truth-for-whether-a-crate-depends-on-std
+[future-replace-no_std]: https://rust-lang.github.io/rfcs/3875-build-std-explicit-dependencies.html#replace-no_std-as-the-source-of-truth-for-whether-a-crate-depends-on-std
 
 ### `restricted_std`
 [restricted_std]: #restricted_std
@@ -564,7 +564,7 @@ and is unchanged.
 See [*Allow local builds of `compiler-rt` intrinsics*][future-compiler-builtins-c]
 for discussion of the `compiler-builtins-c` feature.
 
-[future-compiler-builtins-c]: https://github.com/davidtwco/rfcs/blob/build-std-part-three-explicit-dependencies/text/3875-build-std-explicit-dependencies.md#allow-local-builds-of-compiler-rt-intrinsics
+[future-compiler-builtins-c]: https://rust-lang.github.io/rfcs/3875-build-std-explicit-dependencies.html#allow-local-builds-of-compiler-rt-intrinsics
 
 #### `compiler-builtins/mem`
 [compiler-builtins-mem]: #compiler-builtinsmem
