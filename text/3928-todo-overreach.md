@@ -1,7 +1,7 @@
 - Feature Name: todo overreach
 - Start Date: 2026-01-31
-- RFC PR: [rust-lang/rfcs#0000](https://github.com/rust-lang/rfcs/pull/0000)
-- Rust Issue: [rust-lang/rust#0000](https://github.com/rust-lang/rust/issues/0000)
+- RFC PR: [rust-lang/rfcs#3928](https://github.com/rust-lang/rfcs/pull/3928)
+- Rust Issue: [rust-lang/rust#149543](https://github.com/rust-lang/rust/pull/149543)
 
 ## Summary
 [summary]: #summary
