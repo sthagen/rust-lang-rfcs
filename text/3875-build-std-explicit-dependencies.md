@@ -251,8 +251,8 @@ same behaviour and constraints apply.
 - [*Allow `builtin` source replacement*][future-source-replacement]
 - [*Remove `rustc_dep_of_std`*][future-rustc_dep_of_std]
 
-[rfcs#3874-standard-library-crate-stability]: https://github.com/davidtwco/rfcs/blob/build-std-part-two-always/text/3874-build-std-always.md#standard-library-crate-stability
-[rfcs#3874-noprelude]: https://github.com/davidtwco/rfcs/blob/build-std-part-two-always/text/3874-build-std-always.md#why-use-noprelude-with---extern
+[rfcs#3874-standard-library-crate-stability]: https://rust-lang.github.io/rfcs/3874-build-std-always.html#standard-library-crate-stability
+[rfcs#3874-noprelude]: https://rust-lang.github.io/rfcs/3874-build-std-always.html#why-use-noprelude-with---extern
 
 ### Non-`builtin` standard library dependencies
 [non-builtin-standard-library-dependencies]: #non-builtin-standard-library-dependencies
@@ -1301,8 +1301,8 @@ prevent some otherwise stable features from being toggled as it controls those.
 
 ↩ [*Features*][features]
 
-[rfcs#3874-panic-strategies]: https://github.com/davidtwco/rfcs/blob/build-std-part-two-always/text/3874-build-std-always.md#panic-strategies
-[rfcs#3874-compiler-builtins-mem]: https://github.com/davidtwco/rfcs/blob/build-std-part-two-always/text/3874-build-std-always.md#compiler-builtinsmem
+[rfcs#3874-panic-strategies]: https://rust-lang.github.io/rfcs/3874-build-std-always.html#panic-strategies
+[rfcs#3874-compiler-builtins-mem]: https://rust-lang.github.io/rfcs/3874-build-std-always.html#compiler-builtinsmem
 
 ### Allow local builds of `compiler-rt` intrinsics
 [future-compiler-builtins-c]: #allow-local-builds-of-compiler-rt-intrinsics
