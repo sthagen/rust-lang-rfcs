@@ -37,7 +37,8 @@ However, the above implementation is sub-optimal; problems include:
    expect `struct Foo { x: u32, y: u32 }` to occupy 8 bytes, but if
    `Foo` implements `Drop`, the hidden drop flag will cause it to
    double in size (16 bytes).
-   See the [Program illustrating semantic impact of hidden drop flag]
+   See the [Program illustrating semantic impact of hidden drop
+   flag](#program-illustrating-semantic-impact-of-hidden-drop-flag)
    appendix for a concrete illustration.  Note that when `Foo`
    implements `Drop`, each instance of `Foo` carries a drop-flag, even
    in contexts like a `Vec<Foo>` where a program
@@ -85,7 +86,7 @@ The expected outcomes are as follows:
 
  * Libraries currently relying on drop doing memory zeroing (i.e.
    libraries that check whether content is zero to decide whether its
-   `fn drop` has been invoked will need to be revised, since we will
+   `fn drop` has been invoked) will need to be revised, since we will
    not have implicit memory zeroing anymore.
 
  * In the common case, most libraries using `Drop` will not need to
