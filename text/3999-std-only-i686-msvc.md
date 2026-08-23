@@ -34,33 +34,33 @@ In October of 2025, Microsoft's general support for Windows 10 concluded. That w
 Further, the distance between now and the availability of 64-bit x86 CPUs is over 20 years, starting from the Athlon 64 in 2003.
 
 Rust currently supports the following major Windows targets.
-Download counts for the host toolchain and `std` were extracted from the public dashboard [covering the period from 2026-06-01 to 2026-06-30][static-rlo-dl-counts].
+Download counts for the host toolchain and `std` were extracted from datadog metrics (the [public dashboard]([static-rlo-dl-counts]) only supports limited preset filters).
 
-| Name | Tier | `rustc` download count | `std` download count
+| Name | Tier | `rustc` download count | `std` download count |
 | -------- | -------- | ---- | ------ |
-| `i686-pc-windows-msvc` | 1 | 436.26k | 6.83M |
-| `x86_64-pc-windows-msvc` | 1 | 34.65M | 21.05M |
-| `x86_64-pc-windows-gnu` | 1 | 1.32M | 8.64M |
-| `aarch64-pc-windows-msvc` | 2 | 5.18M | 6.96M |
-| `i686-pc-windows-gnu` | 2 | 72.09k | 3.62M |
+| `i686-pc-windows-msvc` | 1 | 432k | 6.75M |
+| `x86_64-pc-windows-msvc` | 1 | 34.33M | 20.85M |
+| `x86_64-pc-windows-gnu` | 1 | 1.31M | 8.53M |
+| `aarch64-pc-windows-msvc` | 2 | 5.13M | 6.89M |
+| `i686-pc-windows-gnu` | 2 | 72k | 3.57M |
 
 To put the download numbers into perspective, some other targets:
 
-| Name | Tier | `rustc` download count | `std` download count
+| Name | Tier | `rustc` download count | `std` download count |
 | -------- | -------- | --- | ------ |
-| `aarch64-apple-darwin` | 1 | 37.66M | 26.79M |
-| `aarch64-unknown-linux-gnu` | 1 | 48.85M | 40.41M |
-| `i686-unknown-linux-gnu` | 1 | 305.19k | 4.22M |
-| `x86_64-apple-darwin` | 1 | 15.05M | 16.53M |
-| `x86_64-unknown-linux-gnu` | 1 | 640.95M | 286.75M |
-| `x86_64-unknown-freebsd`   | 2 | 276.94k | 4.36M |
-| `x86_64-unknown-netbsd`    | 2 | 63.75k | 3.28M |
+| `aarch64-apple-darwin` | 1 | 37.33M | 26.56M |
+| `aarch64-unknown-linux-gnu` | 1 | 48.15M | 39.99M |
+| `i686-unknown-linux-gnu` | 1 | 303k | 4.18M |
+| `x86_64-apple-darwin` | 1 | 14.88M | 16.40M |
+| `x86_64-unknown-linux-gnu` | 1 | 632.61M | 283.03M |
+| `x86_64-unknown-freebsd`   | 2 | 275k | 4.31M |
+| `x86_64-unknown-netbsd`    | 2 | 63k | 3.24M |
 
 From this we can see that `i686-pc-windows-msvc`'s `std` receives far more downloads than its toolchain, because it is primarily used by cross-compiling.
 Its only peer in host usage at tier 1 is `i686-unknown-linux-gnu`, which is also a 32-bit host.
 Many 64-bit hosts at tier 2 see significantly more usage, and not for no reason.
 
-[static-rlo-dl-counts]: https://p.datadoghq.com/sb/3a172e20-e9e1-11ed-80e3-da7ad0900002-60425c7cb1b7beb2e8959a305a301c0c?fromUser=false&refresh_mode=sliding&from_ts=1736618152507&to_ts=1739210152507&live=true
+[static-rlo-dl-counts]: https://p.datadoghq.com/sb/3a172e20-e9e1-11ed-80e3-da7ad0900002-60425c7cb1b7beb2e8959a305a301c0c?fromUser=false&refresh_mode=sliding&from_ts=1780272000000&to_ts=1782864000000&live=false
 
 ### Compiling to and from 32-bit x86
 
