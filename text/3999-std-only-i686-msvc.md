@@ -34,7 +34,7 @@ In October of 2025, Microsoft's general support for Windows 10 concluded. That w
 Further, the distance between now and the availability of 64-bit x86 CPUs is over 20 years, starting from the Athlon 64 in 2003.
 
 Rust currently supports the following major Windows targets.
-Download counts for the host toolchain and `std` were extracted from datadog metrics (the [public dashboard]([static-rlo-dl-counts]) only supports limited preset filters).
+Download counts for the host toolchain and `std` were extracted from datadog metrics (the [public dashboard][static-rlo-dl-counts] only supports limited preset filters).
 
 | Name | Tier | `rustc` download count | `std` download count |
 | -------- | -------- | ---- | ------ |
@@ -187,7 +187,7 @@ For these reasons, we should not expect this user base to grow significantly.
 # Prior art
 [prior-art]: #prior-art
 
-The `i686-pc-windows-gnu` target was demoted according to the Target Tier Policy ([RFC#2803][ttp-rfc], latest version [in the rustc book][ttp-v1.97]).
+The `i686-pc-windows-gnu` target was demoted according to the Target Tier Policy ([RFC#2803][ttp-rfc], latest policy version as of time of writing [in the rustc book][ttp-v1.98]).
 It was demoted wholesale to tier 2 as it had more severe test failures and lacked the same usage for its standard library.
 The `windows-gnu` target however did retain its host tools, but these may prove to be difficult to maintain for much longer, for similar reasons.
 
@@ -196,7 +196,7 @@ Before that, there has been the [demotion of `i686-apple-darwin` from Tier 1 to 
 The [promotion of `aarch64-apple-darwin` to Tier 1](https://github.com/rust-lang/rfcs/pull/3671) cited popularity as the major motivation, matching unpopularity as one of the motivations here.
 
 [ttp-rfc]: https://rust-lang.github.io/rfcs/2803-target-tier-policy.html
-[ttp-v1.97]: https://doc.rust-lang.org/1.97.1/rustc/target-tier-policy.html
+[ttp-v1.98]: https://doc.rust-lang.org/1.98.0/rustc/target-tier-policy.html
 
 # Unresolved questions
 [unresolved-questions]: #unresolved-questions
