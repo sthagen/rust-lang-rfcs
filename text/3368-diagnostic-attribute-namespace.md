@@ -85,7 +85,7 @@ Any attribute in this namespace may:
 Any attribute in this namespace is not allowed to:
 
 * Change the result of the compilation, which means applying such an attribute should never cause a compilation error as long as they are syntactically valid
-* Pass-through information from the source of the diagnostic in a way that users can rely on. E.g. Such an attribute should not allow users to keep the compilation successful and dump information about `extern` blocks to generate C header files
+* Pass-through information from the source of the diagnostic in a way that users can rely on. E.g. such an attribute should not allow users to keep the compilation successful and dump information about `extern` blocks to generate C header files
 
 The compiler is allowed to:
 
